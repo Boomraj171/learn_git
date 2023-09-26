@@ -1,11 +1,18 @@
-const animals = ['horse', 'goats', 'sheep'];
+animals = ['horse', 'goats', 'sheep'];
+# Solve the quadratic equation ax**2 + bx + c = 0
 
-const count = animals.push('cows');
-console.log(count);
-// Expected output: 4
-console.log(animals);
-// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+# import complex math module
+import cmath
 
-animals.push('chickens', 'cats', 'dogs');
-console.log(animals);
-// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+a = 1
+b = 5
+c = 6
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
